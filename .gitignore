@@ -1,3 +1,13 @@
+### Django ###
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
+
+
 # Python-generated files
 __pycache__/
 *.py[oc]
