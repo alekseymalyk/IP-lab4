@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Calculator</title>
+    <!-- Підключаємо Bootstrap 5 для стильного дизайну -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f4f7f6;
+      }
+      .calc-card {
+        max-width: 650px; /* Збільшена ширина калькулятора */
+        width: 100%;
+        margin-top: 50px;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        padding: 2.5rem !important; /* Більше простору всередині */
+      }
+      .form-label {
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+      .form-control, .form-select {
+        border-radius: 10px;
+        padding: 0.75rem;
+        font-size: 1.05rem;
+      }
+      .btn-lg {
+        padding: 0.8rem;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center">
+      <div class="card calc-card p-4 bg-white">
+        
+        <!-- Заголовок та авторство -->
+        <div class="text-center mb-4">
+          <h2 class="text-primary fw-bold mb-1">Web Калькулятор</h2>
+          <p class="text-muted">
+            Виконав: <strong>Малик Олексій</strong><br />
+            Група: 6.04.122.010.23.1
+          </p>
+        </div>
+
+        <form method="POST">
+          {% csrf_token %}
+
+          <!-- Перше число -->
+          <div class="mb-3">
+            <label class="form-label">Перше число (або KB)</label>
+            <input
+              type="number"
+              step="any"
+              name="num1"
+              class="form-control"
+              required
+              placeholder="Введіть значення"
+            />
+          </div>
+
+          <!-- Вибір операції -->
+          <div class="mb-3">
+            <label class="form-label">Оберіть операцію</label>
+            <select name="operation" id="operation_select" class="form-select">
+              <option value="add">Додавання (+)</option>
+              <option value="sub">Віднімання (-)</option>
+              <option value="mul">Множення (*)</option>
+              <option value="div">Ділення (/)</option>
+              <option value="kb_to_b">KB -> Bytes (Вар. 10)</option>
+            </select>
+          </div>
+
+          <!-- Друге число (динамічно приховується) -->
+          <div class="mb-3" id="num2_group">
+            <label class="form-label">Друге число</label>
+            <input
+              type="number"
+              step="any"
+              name="num2"
+              class="form-control"
+              placeholder="Введіть друге число"
+            />
+          </div>
+
+          <!-- Точність -->
+          <div class="mb-4">
+            <label class="form-label">Точність (знаків після коми)</label>
+            <input
+              type="number"
+              name="precision"
+              class="form-control"
+              value="2"
+              min="0"
+              max="10"
+            />
+          </div>
+
+          <!-- Кнопка розрахунку -->
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary btn-lg">
+              Обчислити результат
+            </button>
+          </div>
+        </form>
+
+        <!-- Блок результату -->
+        {% if result != None %}
+        <div class="mt-4 alert alert-success text-center border-0 shadow-sm">
+          <div class="text-muted small mb-1 text-uppercase fw-bold">Результат обчислення</div>
+          <span class="fs-2 fw-bold text-success">{{ result }}</span>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Сценарій для динамічного приховування полів -->
+    <script>
+      const select = document.getElementById('operation_select');
+      const num2Group = document.getElementById('num2_group');
+
+      function toggleNum2() {
+        if (select.value === 'kb_to_b') {
+          num2Group.style.display = 'none'; // Приховуємо
+        } else {
+          num2Group.style.display = 'block'; // Показуємо
+        }
+      }
+
+      // Слухаємо зміни вибору
+      select.addEventListener('change', toggleNum2);
+
+      // Викликаємо один раз при завантаженні, щоб стан відповідав вибору
+      toggleNum2();
+    </script>
+  </body>
+</html>
