@@ -1,3 +1,6 @@
+# Коментарі для цього файлу я робив за допомогою Gemini 3.1 Pro
+
+
 from django.shortcuts import render, redirect
 from .models import Book
 from .forms import BookForm
@@ -44,9 +47,7 @@ def create_book(request):
         form = BookForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect(
-                "index"
-            )  # Після збереження перекидаємо на головну (її ми ще створимо)
+            return redirect("index")  # Після збереження перекидаємо на головну
     else:
         form = (
             BookForm()
