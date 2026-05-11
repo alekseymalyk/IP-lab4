@@ -1,0 +1,255 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-11 10:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: core/settings.py:119
+msgid "Ukrainian"
+msgstr "Ukraiński"
+
+#: core/settings.py:120
+msgid "English"
+msgstr "Angielski"
+
+#: core/settings.py:121
+msgid "Polish"
+msgstr "Polski"
+
+#: library/models.py:5
+msgid "Ім'я"
+msgstr "Imię"
+
+#: library/models.py:6
+msgid "Прізвище"
+msgstr "Nazwisko"
+
+#: library/models.py:7
+msgid "Біографія"
+msgstr "Biografia"
+
+#: library/models.py:13 library/models.py:30
+#: library/templates/library/index.html:244
+msgid "Автор"
+msgstr "Autor"
+
+#: library/models.py:14
+msgid "Автори"
+msgstr "Autorzy"
+
+#: library/models.py:17
+msgid "Назва жанру"
+msgstr "Nazwa gatunku"
+
+#: library/models.py:23 library/models.py:31
+#: library/templates/library/index.html:246
+msgid "Жанр"
+msgstr "Gatunek"
+
+#: library/models.py:24
+msgid "Жанри"
+msgstr "Gatunki"
+
+#: library/models.py:27 library/templates/library/index.html:243
+msgid "Назва книги"
+msgstr "Tytuł książki"
+
+#: library/models.py:28
+msgid "Опис"
+msgstr "Opis"
+
+#: library/models.py:29
+msgid "Рік видання"
+msgstr "Rok wydania"
+
+#: library/models.py:37
+msgid "Книга"
+msgstr "Książka"
+
+#: library/models.py:38
+msgid "Книги"
+msgstr "Książki"
+
+#: library/templates/library/create.html:7
+#: library/templates/library/create.html:56
+#: library/templates/library/index.html:302
+msgid "Додати нову книгу"
+msgstr "Dodaj nową książkę"
+
+#: library/templates/library/create.html:67
+#: library/templates/library/delete_confirm.html:58
+#: library/templates/library/edit.html:67
+msgid "Скасувати"
+msgstr "Anuluj"
+
+#: library/templates/library/create.html:70
+msgid "Створити книгу"
+msgstr "Utwórz książkę"
+
+#: library/templates/library/delete_confirm.html:7
+msgid "Видалити книгу"
+msgstr "Usuń książkę"
+
+#: library/templates/library/delete_confirm.html:47
+msgid "Видалення книги"
+msgstr "Usuwanie książki"
+
+#: library/templates/library/delete_confirm.html:49
+msgid "Ви впевнені, що хочете видалити книгу"
+msgstr "Czy na pewno chcesz usunąć książkę"
+
+#: library/templates/library/delete_confirm.html:51
+msgid "Tej akcji nie można cofnąć."
+msgstr "Tej akcji nie można cofnąć."
+
+#: library/templates/library/delete_confirm.html:61
+msgid "Так, видалити"
+msgstr "Tak, usuń"
+
+#: library/templates/library/edit.html:7
+msgid "Редагувати книгу"
+msgstr "Edytuj książkę"
+
+#: library/templates/library/edit.html:56
+msgid "Редагування книги"
+msgstr "Edycja książki"
+
+#: library/templates/library/edit.html:70
+msgid "Зберегти зміни"
+msgstr "Zapisz zmiany"
+
+#: library/templates/library/index.html:7
+msgid "Бібліотека - Список книг"
+msgstr "Biblioteka - Lista książek"
+
+#: library/templates/library/index.html:164
+msgid "Бібліотека"
+msgstr "Biblioteka"
+
+#: library/templates/library/index.html:169
+msgid "Додати книгу"
+msgstr "Dodaj książkę"
+
+#: library/templates/library/index.html:176
+msgid "Мова"
+msgstr "Język"
+
+#: library/templates/library/index.html:208
+msgid "хв"
+msgstr "min"
+
+#: library/templates/library/index.html:215
+msgid "Вийти"
+msgstr "Wyloguj"
+
+#: library/templates/library/index.html:220
+#: library/templates/registration/login.html:65
+#: library/templates/registration/register.html:73
+msgid "Увійти"
+msgstr "Zaloguj"
+
+#: library/templates/library/index.html:223
+#: library/templates/registration/register.html:7
+#: library/templates/registration/register.html:58
+msgid "Реєстрація"
+msgstr "Rejestracja"
+
+#: library/templates/library/index.html:234
+msgid "Список книг"
+msgstr "Lista książek"
+
+#: library/templates/library/index.html:235
+msgid "Керуйте своєю колекцією в сучасному інтерфейсі"
+msgstr "Zarządzaj swoją kolekcją w nowoczesnym interfejsie"
+
+#: library/templates/library/index.html:245
+msgid "Рік"
+msgstr "Rok"
+
+#: library/templates/library/index.html:248
+msgid "Дії"
+msgstr "Akcje"
+
+#: library/templates/library/index.html:276
+msgid "Редагувати"
+msgstr "Edytuj"
+
+#: library/templates/library/index.html:279
+msgid "Видалити"
+msgstr "Delete"
+
+#: library/templates/library/index.html:290
+msgid "Книг поки що немає. Будьте першим, хто додасть!"
+msgstr "Nie ma jeszcze książek. Bądź pierwszym, który doda!"
+
+#: library/templates/registration/login.html:7
+msgid "Вхід"
+msgstr "Logowanie"
+
+#: library/templates/registration/login.html:58
+msgid "Вхід у систему"
+msgstr "Zaloguj się do systemu"
+
+#: library/templates/registration/login.html:59
+msgid "Ласкаво просимо назад! Будь ласка, введіть свої дані"
+msgstr "Witaj z powrotem! Proszę wprowadź swoje dane"
+
+#: library/templates/registration/login.html:71
+msgid "Немає акаунту?"
+msgstr "Nie masz konta?"
+
+#: library/templates/registration/login.html:73
+#: library/templates/registration/register.html:65
+msgid "Зареєструватися"
+msgstr "Zarejestruj się"
+
+#: library/templates/registration/register.html:59
+msgid "Створіть свій акаунт за лічені секунди"
+msgstr "Utwórz konto w kilka sekund"
+
+#: library/templates/registration/register.html:71
+msgid "Вже є акаунт?"
+msgstr "Masz już konto?"
+
+#: templates/home.html:7
+msgid "Лабораторні роботи - Головна"
+msgstr "Laboratoria - Strona główna"
+
+#: templates/home.html:100
+msgid "Виберіть додаток"
+msgstr "Wybierz aplikację"
+
+#: templates/home.html:101
+msgid "Усі ваші лабораторні роботи в одному місці"
+msgstr "Wszystkie Twoje prace laboratoryjne w jednym miejscu"
+
+#: templates/home.html:109
+msgid "Library System"
+msgstr "System Biblioteczny"
+
+#: templates/home.html:110
+msgid "Керування книгами, авторами та жанрами з підтримкою i18n та авторизації"
+msgstr "Zarządzanie książkami, autorami i gatunkami z obsługą i18n i autoryzacją"
+
+#: templates/home.html:118
+msgid "Calculator App"
+msgstr "Kalkulator"
+
+#: templates/home.html:119
+msgid "Простий калькулятор для виконання арифметичних операцій"
+msgstr "Prosty kalkulator do wykonywania operacji arytmetycznych"
